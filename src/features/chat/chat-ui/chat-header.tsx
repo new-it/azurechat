@@ -2,7 +2,7 @@ import { FC } from "react";
 import { useChatContext } from "./chat-context";
 import { ChatStyleSelector } from "./chat-empty-state/chat-style-selector";
 import { ChatTypeSelector } from "./chat-empty-state/chat-type-selector";
-import { ChatModelSelector } from "./chat-model-selector";
+import { ChatModelSelector } from "./chat-empty-state/chat-model-selector";
 
 interface Prop {}
 

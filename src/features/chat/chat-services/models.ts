@@ -20,7 +20,7 @@ export type ConversationStyle = "creative" | "balanced" | "precise";
 export type ChatType = "simple" | "data" | "mssql";
 
 export type ChatRole = "system" | "user" | "assistant" | "function";
-export type ChatModel = "gpt-3.5-turbo" | "gpt-4";
+export type ChatModel = "chat-gpt-35-turbo-16k" | "chat-gpt-4-32k";
 
 export interface ChatThreadModel {
   id: string;
