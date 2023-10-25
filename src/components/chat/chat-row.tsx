@@ -58,7 +58,7 @@ const ChatRow: FC<ChatRowProps> = (props) => {
                 />
               )}
             </div>
-            <Typography variant="h5" className="capitalize text-sm">
+            <Typography variant="h5" className="text-sm">
               {props.name}
             </Typography>
           </div>
