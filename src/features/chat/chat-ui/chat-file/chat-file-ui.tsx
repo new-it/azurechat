@@ -41,7 +41,7 @@ export const ChatFileUI: FC = () => {
           Upload
         </Button>
       </form>
-      <p className="text-xs text-primary">{uploadButtonLabel}</p>
+      <p className="text-xs text-primary">Max. 16 MB, supported file types: pdf, docx, pptx, txt, md, html</p>
     </div>
   );
 };
