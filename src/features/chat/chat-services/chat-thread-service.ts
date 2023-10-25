@@ -170,7 +170,7 @@ export const updateChatThreadTitle = async (
 
 export const CreateChatThread = async () => {
   const modelToSave: ChatThreadModel = {
-    name: "new chat",
+    name: "Empty Chat",
     useName: (await userSession())!.name,
     userId: await userHashedId(),
     id: nanoid(),

@@ -31,7 +31,8 @@
         "eastus",
         "francecentral",
         "japaneast",
-        "northcentralus"
+        "northcentralus",
+        "switzerlandnorth"
       ],
       "metadata": {
         "azd": {
