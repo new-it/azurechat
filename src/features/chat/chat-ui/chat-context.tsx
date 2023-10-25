@@ -8,6 +8,7 @@ import {
   ChatMessageModel,
   ChatThreadModel,
   ChatType,
+  ChatModel,
   ConversationStyle,
   PromptGPTBody,
 } from "../chat-services/models";
@@ -28,6 +29,7 @@ interface ChatContextProps extends UseChatHelpers {
   chatBody: PromptGPTBody;
   fileState: FileState;
   onChatTypeChange: (value: ChatType) => void;
+  onChatModelChange: (value: ChatModel) => void;
   onConversationStyleChange: (value: ConversationStyle) => void;
   speech: TextToSpeechProps & SpeechToTextProps;
 }
@@ -87,6 +89,10 @@ export const ChatProvider: FC<Prop> = (props) => {
     setChatBody({ ...chatBody, chatType: value });
   };
 
+  const onChatModelChange = (value: ChatModel) => {
+    setChatBody({ ...chatBody, chatModel: value });
+  };
+
   const onConversationStyleChange = (value: ConversationStyle) => {
     setChatBody({ ...chatBody, conversationStyle: value });
   };
@@ -102,6 +108,7 @@ export const ChatProvider: FC<Prop> = (props) => {
         setChatBody,
         chatBody,
         onChatTypeChange,
+        onChatModelChange,
         onConversationStyleChange,
         fileState,
         id: props.id,
