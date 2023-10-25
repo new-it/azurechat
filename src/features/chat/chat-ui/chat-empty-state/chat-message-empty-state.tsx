@@ -5,6 +5,7 @@ import { useChatContext } from "../chat-context";
 import { ChatFileUI } from "../chat-file/chat-file-ui";
 import { ChatStyleSelector } from "./chat-style-selector";
 import { ChatTypeSelector } from "./chat-type-selector";
+import { ChatModelSelector } from "./chat-model-selector";
 
 interface Prop {}
 
@@ -27,6 +28,12 @@ export const ChatMessageEmptyState: FC<Prop> = (props) => {
           Personalise
         </Typography>
 
+        <div className="flex flex-col gap-2">
+          <p className="text-sm text-muted-foreground">
+            Choose a model
+          </p>
+          <ChatModelSelector disable={false} />
+        </div>
         <div className="flex flex-col gap-2">
           <p className="text-sm text-muted-foreground">
             Choose a conversation style
